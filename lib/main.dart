@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import 'config.dart';
 import 'fetures/products_screen/presentation/pages/products_screen.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
+  configureDependencies();
   await ScreenUtil.ensureScreenSize();
   runApp(const MyApp());
 }

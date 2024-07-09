@@ -8,3 +8,12 @@ TextStyle searchHintStyle= TextStyle(
   fontSize: 14.sp,
   fontWeight: FontWeight.w300
 );
+TextStyle productTitleStyle=TextStyle(
+    color: secondaryColor,
+    fontSize: 14.sp,
+  fontWeight: FontWeight.w400
+);TextStyle discountStyle=TextStyle(
+    color: primaryColor,
+    fontSize: 14.sp,
+  fontWeight: FontWeight.w400
+);
