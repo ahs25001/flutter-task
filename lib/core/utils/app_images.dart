@@ -1,0 +1,1 @@
+String appLogo = "assets/images/logo.svg";
