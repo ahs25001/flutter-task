@@ -20,6 +20,8 @@ class Assets {
   static const String fontsPoppinsSemiBoldItalic = 'assets/fonts/Poppins-SemiBoldItalic.ttf';
   static const String fontsPoppinsThin = 'assets/fonts/Poppins-Thin.ttf';
   static const String fontsPoppinsThinItalic = 'assets/fonts/Poppins-ThinItalic.ttf';
+  static const String imagesCartIcon = 'assets/images/cartIcon.svg';
   static const String imagesLogo = 'assets/images/logo.svg';
+  static const String imagesSearchIcon = 'assets/images/searchIcon.svg';
 
 }
