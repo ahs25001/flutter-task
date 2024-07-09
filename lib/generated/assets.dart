@@ -24,5 +24,6 @@ class Assets {
   static const String imagesCartIcon = 'assets/images/cartIcon.svg';
   static const String imagesLogo = 'assets/images/logo.svg';
   static const String imagesSearchIcon = 'assets/images/searchIcon.svg';
+  static const String jsonErrorAnimation = 'assets/json/errorAnimation.json';
 
 }

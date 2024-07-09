@@ -11,6 +11,7 @@ import 'package:flutter_task/generated/assets.dart';
 
 import '../widgets/product_card.dart';
 import '../widgets/product_list_shimer.dart';
+import '../widgets/products_error.dart';
 
 class ProductsScreen extends StatelessWidget {
   static const String routeName = "productsScreen";
@@ -73,7 +74,7 @@ class ProductsScreen extends StatelessWidget {
                     )
                         : ((state.productsScreenState ==
                                 ProductsScreenState.getProductsError)
-                            ? Text(state.apiError?.massage ?? "")
+                            ? ProductsError()
                             : Expanded(
                                 child: GridView.builder(
                                     itemCount:
