@@ -10,6 +10,7 @@ import 'package:flutter_task/fetures/products_screen/presentation/widgets/search
 import 'package:flutter_task/generated/assets.dart';
 
 import '../widgets/product_card.dart';
+import '../widgets/product_list_shimer.dart';
 
 class ProductsScreen extends StatelessWidget {
   static const String routeName = "productsScreen";
@@ -58,10 +59,18 @@ class ProductsScreen extends StatelessWidget {
                     ),
                     (state.productsScreenState ==
                             ProductsScreenState.getProductsLoading)
-                        ? Center(
-                            child: CircularProgressIndicator(
-                            color: primaryColor,
-                          ))
+                        ? Expanded(
+                      child: GridView.builder(
+                          itemCount:10,
+                          gridDelegate:
+                          SliverGridDelegateWithFixedCrossAxisCount(
+                              childAspectRatio: 191.w/257.h,
+                              mainAxisSpacing: 16.h,
+                              crossAxisSpacing: 16.w,
+                              crossAxisCount: 2),
+                          itemBuilder: (context, index) =>
+                          ProductListShimmer()),
+                    )
                         : ((state.productsScreenState ==
                                 ProductsScreenState.getProductsError)
                             ? Text(state.apiError?.massage ?? "")

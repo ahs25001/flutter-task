@@ -1,4 +1,4 @@
-import 'package:cached_network_image/cached_network_image.dart';
+import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -12,7 +12,7 @@ import '../../../../core/utils/app_styles.dart';
 class ProductCard extends StatelessWidget {
   ProductsDataEntity? product;
 
-  ProductCard(this.product);
+  ProductCard(this.product, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,15 +29,13 @@ class ProductCard extends StatelessWidget {
           Stack(
             alignment: Alignment.topRight,
             children: [
-              CachedNetworkImage(
+              FancyShimmerImage(
                 imageUrl: product?.images?[0] ?? "",
                 width: 191.w,
                 height: 128.h,
-                progressIndicatorBuilder: (context, url, downloadProgress) =>
-                    Center(
-                        child: CircularProgressIndicator(
-                            value: downloadProgress.progress)),
-                errorWidget: (context, url, error) => const Icon(Icons.error),
+                shimmerBaseColor: Colors.grey.shade300,
+                shimmerHighlightColor: Colors.grey.shade100,
+                errorWidget: Icon(Icons.error,color: primaryColor,),
               ),
               SvgPicture.asset(
                 Assets.imagesAddToFavoretIcon,

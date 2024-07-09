@@ -44,7 +44,9 @@ dependencies:
   flutter_screenutil: ^5.9.3
   dartz: ^0.10.1
   equatable: ^2.0.5
-  cached_network_image: ^3.3.1
+  shimmer: ^3.0.0
+  fancy_shimmer_image: ^2.0.3
+  lottie: ^3.1.2
 
 dev_dependencies:
   injectable_generator:
