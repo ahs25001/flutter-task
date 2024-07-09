@@ -23,6 +23,8 @@ class Assets {
   static const String imagesAddToFavoretIcon = 'assets/images/addToFavoretIcon.svg';
   static const String imagesCartIcon = 'assets/images/cartIcon.svg';
   static const String imagesLogo = 'assets/images/logo.svg';
+  static const String imagesScreenshot2024070921055810817140a800ac55a83ec96a2d65e5d011 = 'assets/images/Screenshot_2024-07-09-21-05-58-10_817140a800ac55a83ec96a2d65e5d011.jpg';
+  static const String imagesScreenshot2024070921062681817140a800ac55a83ec96a2d65e5d011 = 'assets/images/Screenshot_2024-07-09-21-06-26-81_817140a800ac55a83ec96a2d65e5d011.jpg';
   static const String imagesSearchIcon = 'assets/images/searchIcon.svg';
   static const String jsonErrorAnimation = 'assets/json/errorAnimation.json';
 
